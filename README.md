@@ -10,41 +10,12 @@ A aplicação destaca-se por implementar uma **camada cognitiva superior** utili
 
 ## 🏗️ 2. ARQUITETURA DO SOFTWARE & FLUXO COGNITIVO
 
-O sistema foi arquitetado sob o princípio de **Sistemas de Defesa em Camadas (Resiliência de Software)**, garantindo que anomalias de rede ou indisponibilidade de APIs externas nunca comprometam o console principal.
+O ecossistema foi desenhado sob o princípio de **Sistemas de Defesa em Camadas**, priorizando a resiliência operacional e a sustentabilidade computacional através de um fluxo inteligente dividido em 4 etapas:
 
-            +---------------------------------------+
-            |     DADOS BRUTOS DE TELEMETRIA        |
-            +---------------------------------------+
-                                |
-                                v
-            +---------------------------------------+
-            |    LÓGICA ESTRITA LOCAL (IF/ELSE)     |
-            +---------------------------------------+
-                                |
-              +-----------------+-----------------+
-              |                                   |
-     Risco Acumulado == 0                Risco Acumulado > 0
-              |                                   |
-              v                                   v
-+---------------------------+       +---------------------------+
-| SUSTENTABILIDADE COMP.    |       |   ENGENHARIA DE PROMPT    |
-| (Ignora API / Economia)   |       |  (Métricas + Estado Local)|
-+---------------------------+       +---------------------------+
-                                                  |
-                                                  v
-                                    +---------------------------+
-                                    |    OLLAMA CLOUD CLIENT    |
-                                    +---------------------------+
-                                                  |
-                                  +---------------+---------------+
-                                  |                               |
-                           Sucesso (200)                    Falha / Timeout
-                                  |                               |
-                                  v                               v
-                    +---------------------------+   +---------------------------+
-                    |  COMANDO IA OPERACIONAL   |   | CONTINGÊNCIA LOCAL ATIVA  |
-                    | (Diretriz Personalizada)  |   |  (Segurança de Hardware)  |
-                    +---------------------------+   +---------------------------+
+1. **📥 Captura de Telemetria:** O sistema centraliza e interpreta os dados brutos simulados (temperatura, comunicação, energia, suporte de vida e status dos módulos).
+2. **🛡️ Triagem de Risco (Eficiência Energética):** Antes de acionar qualquer recurso externo, o código calcula o risco localmente. Se o estado for nominal (risco zero), a IA não é chamada, economizando processamento e tráfego de dados.
+3. **🧠 Consulta Cognitiva (Ollama Cloud):** Caso uma anomalia seja detectada (risco > 0), as métricas são estruturadas e enviadas ao modelo `gpt-oss:120b` para gerar comandos de engenharia em tempo real.
+4. **🔄 Contingência Automática (Redundância):** Se ocorrer uma falha de rede ou timeout com a API, o mecanismo de segurança `try/except` assume o controle instantaneamente, exibindo o protocolo básico pré-programado sem interromper a execução do console.
 
 ### 🛰️ Mecanismos de Usabilidade e Estabilidade:
 * **Sustentabilidade Computacional:** Se a telemetria local indicar que todos os sistemas operam em faixa nominal (0 pontos de risco), o software inibe o acionamento da IA. Isso reduz custos de transmissão, tráfego de dados e processamento em nuvem.
