@@ -1,77 +1,118 @@
-# 🚀 Mission Orion - Sistema Inteligente de Monitoramento Energético e Telemetria Espacial
+# 🚀 MISSION ORION — SISTEMA INTELIGENTE DE TELEMETRIA E EFICIÊNCIA ENERGÉTICA
 
-## 🌌 Sobre o Projeto
-[cite_start]O **Mission Orion** é uma solução computacional robusta desenvolvida para o monitoramento inteligente de sistemas energéticos em missões espaciais experimentais[cite: 5, 8]. [cite_start]O ecossistema foi projetado para receber, interpretar e exibir dados de telemetria em tempo real, cobrindo métricas essenciais como temperatura interna, link de comunicação, eficiência dos sistemas de energia, integridade do suporte de vida e o status dos módulos operacionais[cite: 12, 20].
+## 🌌 1. VISÃO GERAL DO PROJETO
 
-[cite_start]A plataforma combina estruturas lógicas avançadas de tomada de decisão com uma **camada cognitiva superior** via inteligência artificial generativa (Ollama Cloud)[cite: 13, 15]. [cite_start]O foco central do projeto é otimizar a eficiência energética do hardware espacial e garantir a sustentabilidade das operações através de relatórios preditivos de consumo[cite: 6, 18].
+O **Mission Orion** é um ecossistema de software de missão crítica projetado para o **monitoramento inteligente de sitemas energéticos e telemetria aeroespacial**. O desafio central desta aplicação é interpretar fluxos de dados complexos e fornecer tanto análises em tempo real quanto relatórios preditivos avançados voltados à sustentabilidade, eficiência de hardware e conservação de recursos espaciais renováveis.
 
----
-
-## 🛠️ Arquitetura do Sistema e Fluxo de Dados
-
-[cite_start]O software opera sob uma arquitetura resiliente baseada em **Sistemas de Defesa e Contingência em Camadas**, garantindo estabilidade absoluta mesmo em cenários de falha de rede[cite: 16, 22].
-
-[Dados Brutos de Telemetria]│▼[Lógica Local Estrita (If/Else)] ──► Se Risco Acumulado == 0 ──► (Ignora API / Sustentabilidade Computacional)│Se Risco Detectado > 0│▼[Engenharia de Prompt Técnico] ──► (Empacotamento de Métricas e Estados Locais)│▼[Cliente Ollama Cloud (gpt-oss:120b)]├── Sucesso (200) ──► Retorna Comando Técnico Dinâmico e Assertivo└── Falha de Rede  ──► Aciona Inteligência de Contingência Local (Resiliência Operacional)
-1. **Triagem Local Estrita:** O sistema calcula o risco de forma local[cite: 15, 22]. Se as variáveis operarem em estado nominal ($0$ pontos de risco), a API de IA não é acionada, economizando largura de banda e processamento (eficiência energética de software)[cite: 16].
-2. **Engenharia de Prompt:** Em caso de anomalias, os dados reais são traduzidos em parâmetros rigorosos de engenharia aeroespacial e submetidos à IA[cite: 13, 20].
-3. **Modo de Contingência Ativo:** Caso ocorra perda de conexão ou erros de autenticação com o servidor externo, o bloco de segurança `try/except` assume o controle imediatamente[cite: 22, 23]. O sistema exibe o protocolo básico pré-programado, impedindo o travamento da aplicação[cite: 22].
+A aplicação destaca-se por implementar uma **camada cognitiva superior** utilizando o modelo de linguagem de larga escala **`gpt-oss:120b`** via Ollama Cloud, integrando IA de forma criteriosa e estruturada para tomadas de decisão autônomas no controle de missão.
 
 ---
 
-## ⚡ Recursos Implementados (Critérios de Avaliação)
+## 🏗️ 2. ARQUITETURA DO SOFTWARE & FLUXO COGNITIVO
 
-### 📈 1. Análise Técnica e Telemetria (60 Pontos)
-* **Processamento de Dados Simulados:** Análise matemática precisa de 5 variáveis críticas ao longo de múltiplos ciclos de missão[cite: 12, 20].
-* **Geração de Alertas:** Identificação automática e classificação de criticidade (`NORMAL`, `ATENÇÃO` e `CRÍTICO`) usando limites rigorosos de engenharia[cite: 14, 21].
-* **Modularidade:** Código estruturado em funções puras de cálculo, mapeamento de tendências de desempenho (melhora/piora) e isolamento de áreas afetadas[cite: 14, 16].
+O sistema foi arquitetado sob o princípio de **Sistemas de Defesa em Camadas (Resiliência de Software)**, garantindo que anomalias de rede ou indisponibilidade de APIs externas nunca comprometam o console principal.
 
-### 💡 2. Inovação Coletiva e Inteligência Artificial (30 Pontos)
-* **Modelagem via Ollama Cloud:** Integração nativa com a biblioteca `ollama` consumindo o modelo de larga escala `gpt-oss:120b`[cite: 13].
-* **Comandos em Tempo Real:** Substituição de strings estáticas por diretrizes dinâmicas e contextuais baseadas em inteligência artificial configurada em baixa temperatura (`0.3`), garantindo respostas analíticas e livres de alucinações[cite: 13, 15].
-* **Parecer de Sustentabilidade Energética:** Um módulo exclusivo que consome as médias geradas pelo fechamento da missão para prever gargalos de hardware e sugerir melhorias no uso de energias renováveis e conservação de recursos espaciais[cite: 3, 18].
+            +---------------------------------------+
+            |     DADOS BRUTOS DE TELEMETRIA        |
+            +---------------------------------------+
+                                |
+                                v
+            +---------------------------------------+
+            |    LÓGICA ESTRITA LOCAL (IF/ELSE)     |
+            +---------------------------------------+
+                                |
+              +-----------------+-----------------+
+              |                                   |
+     Risco Acumulado == 0                Risco Acumulado > 0
+              |                                   |
+              v                                   v
++---------------------------+       +---------------------------+
+| SUSTENTABILIDADE COMP.    |       |   ENGENHARIA DE PROMPT    |
+| (Ignora API / Economia)   |       |  (Métricas + Estado Local)|
++---------------------------+       +---------------------------+
+                                                  |
+                                                  v
+                                    +---------------------------+
+                                    |    OLLAMA CLOUD CLIENT    |
+                                    +---------------------------+
+                                                  |
+                                  +---------------+---------------+
+                                  |                               |
+                           Sucesso (200)                    Falha / Timeout
+                                  |                               |
+                                  v                               v
+                    +---------------------------+   +---------------------------+
+                    |  COMANDO IA OPERACIONAL   |   | CONTINGÊNCIA LOCAL ATIVA  |
+                    | (Diretriz Personalizada)  |   |  (Segurança de Hardware)  |
+                    +---------------------------+   +---------------------------+
 
-### 👤 3. Usabilidade e Apresentação (10 Pontos)
-* **Console Semântico:** Visualização limpa, organizada e hierárquica dividida por blocos de ciclos no terminal[cite: 14, 24].
-* **Resiliência a Falhas:** Exibição clara de avisos operacionais em caso de acionamento do modo de contingência local, mantendo o operador sempre informado sobre o status da infraestrutura[cite: 22, 24].
+### 🛰️ Mecanismos de Usabilidade e Estabilidade:
+* **Sustentabilidade Computacional:** Se a telemetria local indicar que todos os sistemas operam em faixa nominal (0 pontos de risco), o software inibe o acionamento da IA. Isso reduz custos de transmissão, tráfego de dados e processamento em nuvem.
+* **Redundância e Tolerância a Falhas:** Através de blocos estruturados `try/except`, qualquer falha na chamada do Ollama Cloud (erros de conexão, timeouts ou credenciais expiradas) ativa imediatamente a **Inteligência de Contingência Local**, mantendo as diretrizes de segurança básicas na tela do operador sem travar a execução.
 
 ---
 
-## 📋 Dados da MissTelemetry (Simulação Atual)
+## 📊 3. MATRIZ DE CONFIGURAÇÃO DE TELEMETRIA
 
-As métricas monitoradas por área e suas faixas críticas configuradas no código são:
+O sistema avalia dinamicamente 5 áreas críticas. Abaixo estão os limites operacionais estritos e as médias simuladas consolidadas no fechamento da missão:
 
-| Área Monitorada | Indicador Crítico | Indicador de Atenção | Média Registada na Missão |
-| :--- | :---: | :---: | :---: |
-| **Temperatura Interna** | $\ge 35ºC$ ou $\le 18ºC$ | $\ge 33ºC$ | 31.87 ºC |
-| **Comunicação com a Base**| $\le 30\%$ | $\le 65\%$ | 55.00% |
-| **Sistemas de Energia** | $\le 20\%$ | $\le 50\%$ | 58.00% |
-| **Suporte de Vida** | $\le 80\%$ | $\le 90\%$ | 91.75% |
-| **Status dos Módulos** | $\le 40\%$ | $\le 65\%$ | 69.67% |
+| 📍 Área Monitorada | 🟢 Faixa Nominal | 🟡 Limiar de Atenção | 🔴 Limiar Crítico | 📈 Média da Missão |
+| :--- | :---: | :---: | :---: | :---: |
+| **Temperatura Interna** | $18.1ºC \dots 32.9ºC$ | $\ge 33.0ºC$ | $\ge 35.0ºC$ ou $\le 18.0ºC$ | **31.87 ºC** |
+| **Comunicação com a Base**| $> 65.0\%$ | $\le 65.0\%$ | $\le 30.0\%$ | **55.00%** |
+| **Sistemas de Energia** | $> 50.0\%$ | $\le 50.0\%$ | $\le 20.0\%$ | **58.00%** |
+| **Suporte de Vida** | $> 90.0\%$ | $\le 90.0\%$ | $\le 80.0\%$ | **91.75%** |
+| **Status dos Módulos** | $> 65.0\%$ | $\le 65.0\%$ | $\le 40.0\%$ | **69.67%** |
 
 ---
 
-## 🚀 Como Executar a Solução
+## 🛠️ 4. DESTAQUES DA IMPLEMENTAÇÃO TÉCNICA
 
-### Pré-requisitos
-Certifica-te de ter o Python 3.10+ instalado e a biblioteca oficial do Ollama configurada no teu ambiente de desenvolvimento:
+### ⚡ Critérios Técnicos Atendidos
+* **Mapeamento de Tendências:** Funções puras que comparam dinamicamente os riscos entre o ciclo atual e o anterior, reportando estados de `Melhora`, `Piora` ou `Estabilidade`.
+* **Rastreamento de Crise:** Isolamento algorítmico das áreas de maior impacto por ciclo, tratando cenários de empate técnico de forma limpa no console.
 
-bash
-pip install ollama 
+### 💡 Inovação e Camada de IA
+* **Baixa Temperatura de Inferência:** Configuração estrita de `temperature: 0.3` no Ollama Client, garantindo respostas lógicas, pragmáticas e puramente técnicas de engenharia de software aeroespacial.
+* **Módulo de Análise Cognitiva de Sustentabilidade:** Ao gerar o relatório final, a IA analisa a performance energética agregada e gera um parecer técnico focado em otimização de hardware renovável para futuras missões experimentais.
 
-Clona este repositório para a tua máquina local. Abre o arquivo principal do código e valida a presença da sua chave de acesso e definição do modelo no cabeçalho:
+---
+
+## 🚀 5. INSTRUÇÕES DE EXECUÇÃO
+
+### 📋 Pré-requisitos
+O projeto necessita do Python 3.10+ e da biblioteca oficial de conexões do Ollama instalada:
+
+```bash
+pip install ollama
+💻 Rodando o Monitoramento
+Garanta que as suas configurações de chaves estejam mapeadas corretamente no cabeçalho do script:
+
+Python
 API_KEY = "3a7a5e76c2914495834ec14ab91a4730.ECpPqDEws6dXZ5ZKi9942xUA"
 MODEL_NAME = "gpt-oss:120b"
+Execute a central de controle via terminal:
 
-Executa o script python:
+Bash
 python monitoramento_orion.py
+🎬 6. LINKS DE ENTREGA (DOCUMENTAÇÃO OFICIAL)
+Conforme os critérios estabelecidos nas diretrizes da Global Solution, os links para avaliação do projeto encontram-se mapeados abaixo:
 
+🔗 Repositório Oficial no GitHub: [Insira o link aqui]
 
-🎥 Demonstração e Links de EntregaDe acordo com as exigências da Global Solution, as informações oficiais para avaliação encontram-se listadas abaixo: 
-Vídeo do YouTube (Demonstração Prática): [Insira o Link do seu Vídeo Aqui] 
+🎥 Vídeo Demonstrativo no YouTube: [Insira o link aqui] (Duração máxima de 3 minutos, modo Não Listado)
 
-👥 Integrantes do Grupo
-João Marcelo de Melo e Silva — RM: 572569
-Pablo Renato dos Santos Sobral de Carvalho — RM: 569894
-Pedro Vianna — RM: 570747
+👥 7. CORPO DOCENTE E INTEGRANTES DO PROJETO
+Instituição: FIAP — Faculdade de Informática e Administração Paulista
 
-FIAP - Ciência da Computação (Turmas 1CCPG) Global Solution 2026 - Soluções em Energias Renováveis e Sustentabilidade.  
+Curso: Bacharelado em Ciência da Computação
+
+Turma: 1CC
+
+Tema: Soluções em Energias Renováveis e Sustentabilidade
+
+Integrante 1: Nome Completo — RMXXXXX
+
+Integrante 2: Nome Completo — RMXXXXX
+
+Integrante 3: Nome Completo — RMXXXXX
