@@ -70,7 +70,7 @@ python monitoramento_orion.py
 🎬 6. LINKS DE ENTREGA (DOCUMENTAÇÃO OFICIAL)
 Conforme os critérios estabelecidos nas diretrizes da Global Solution, segue o link do vídeo pitch:
 
-🎥 Vídeo Demonstrativo no YouTube: [Insira o link aqui] (Duração máxima de 3 minutos, modo Não Listado)
+🎥 Vídeo no YouTube: https://youtu.be/_--Vk4s-des?si=LSp1xRFiLWvjm9ZL
 
 👥 7. CORPO DOCENTE E INTEGRANTES DO PROJETO
 Instituição: FIAP — Faculdade de Informática e Administração Paulista
