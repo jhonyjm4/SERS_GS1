@@ -95,10 +95,9 @@ Execute a central de controle via terminal:
 
 Bash
 python monitoramento_orion.py
-🎬 6. LINKS DE ENTREGA (DOCUMENTAÇÃO OFICIAL)
-Conforme os critérios estabelecidos nas diretrizes da Global Solution, os links para avaliação do projeto encontram-se mapeados abaixo:
 
-🔗 Repositório Oficial no GitHub: [Insira o link aqui]
+🎬 6. LINKS DE ENTREGA (DOCUMENTAÇÃO OFICIAL)
+Conforme os critérios estabelecidos nas diretrizes da Global Solution, segue o link do vídeo pitch:
 
 🎥 Vídeo Demonstrativo no YouTube: [Insira o link aqui] (Duração máxima de 3 minutos, modo Não Listado)
 
@@ -107,12 +106,10 @@ Instituição: FIAP — Faculdade de Informática e Administração Paulista
 
 Curso: Bacharelado em Ciência da Computação
 
-Turma: 1CC
+Turma: 1CCPG
 
-Tema: Soluções em Energias Renováveis e Sustentabilidade
+Matéria: Soluções em Energias Renováveis e Sustentabilidade, Professor: André Tritiack
 
-Integrante 1: Nome Completo — RMXXXXX
-
-Integrante 2: Nome Completo — RMXXXXX
-
-Integrante 3: Nome Completo — RMXXXXX
+João Marcelo de Melo e Silva — RM: 572569
+Pablo Renato dos Santos Sobral de Carvalho — RM: 569894
+Pedro Vianna — RM: 570747
