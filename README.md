@@ -11,22 +11,7 @@
 
 [cite_start]O software opera sob uma arquitetura resiliente baseada em **Sistemas de Defesa e Contingência em Camadas**, garantindo estabilidade absoluta mesmo em cenários de falha de rede[cite: 16, 22].
 
-[Dados Brutos de Telemetria]
-│
-▼
-[Lógica Local Estrita (If/Else)] ──► Se Risco Acumulado == 0 ──► (Ignora API / Sustentabilidade Computacional)
-│
-Se Risco Detectado > 0
-│
-▼
-[Engenharia de Prompt Técnico] ──► (Empacotamento de Métricas e Estados Locais)
-│
-▼
-[Cliente Ollama Cloud (gpt-oss:120b)]
-├── Sucesso (200) ──► Retorna Comando Técnico Dinâmico e Assertivo
-└── Falha de Rede  ──► Aciona Inteligência de Contingência Local (Resiliência Operacional)
-
-
+[Dados Brutos de Telemetria]│▼[Lógica Local Estrita (If/Else)] ──► Se Risco Acumulado == 0 ──► (Ignora API / Sustentabilidade Computacional)│Se Risco Detectado > 0│▼[Engenharia de Prompt Técnico] ──► (Empacotamento de Métricas e Estados Locais)│▼[Cliente Ollama Cloud (gpt-oss:120b)]├── Sucesso (200) ──► Retorna Comando Técnico Dinâmico e Assertivo└── Falha de Rede  ──► Aciona Inteligência de Contingência Local (Resiliência Operacional)
 1. **Triagem Local Estrita:** O sistema calcula o risco de forma local[cite: 15, 22]. Se as variáveis operarem em estado nominal ($0$ pontos de risco), a API de IA não é acionada, economizando largura de banda e processamento (eficiência energética de software)[cite: 16].
 2. **Engenharia de Prompt:** Em caso de anomalias, os dados reais são traduzidos em parâmetros rigorosos de engenharia aeroespacial e submetidos à IA[cite: 13, 20].
 3. **Modo de Contingência Ativo:** Caso ocorra perda de conexão ou erros de autenticação com o servidor externo, o bloco de segurança `try/except` assume o controle imediatamente[cite: 22, 23]. O sistema exibe o protocolo básico pré-programado, impedindo o travamento da aplicação[cite: 22].
@@ -70,5 +55,23 @@ As métricas monitoradas por área e suas faixas críticas configuradas no códi
 ### Pré-requisitos
 Certifica-te de ter o Python 3.10+ instalado e a biblioteca oficial do Ollama configurada no teu ambiente de desenvolvimento:
 
-```bash
-pip install ollama
+bash
+pip install ollama 
+
+Clona este repositório para a tua máquina local. Abre o arquivo principal do código e valida a presença da sua chave de acesso e definição do modelo no cabeçalho:
+API_KEY = "3a7a5e76c2914495834ec14ab91a4730.ECpPqDEws6dXZ5ZKi9942xUA"
+MODEL_NAME = "gpt-oss:120b"
+
+Executa o script python:
+python monitoramento_orion.py
+
+
+🎥 Demonstração e Links de EntregaDe acordo com as exigências da Global Solution, as informações oficiais para avaliação encontram-se listadas abaixo: 
+Vídeo do YouTube (Demonstração Prática): [Insira o Link do seu Vídeo Aqui] 
+
+👥 Integrantes do Grupo
+João Marcelo de Melo e Silva — RM: 572569
+Pablo Renato dos Santos Sobral de Carvalho — RM: 569894
+Pedro Vianna — RM: 570747
+
+FIAP - Ciência da Computação (Turmas 1CCPG) Global Solution 2026 - Soluções em Energias Renováveis e Sustentabilidade.  
